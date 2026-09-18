@@ -1,4 +1,4 @@
-/* Configuración general */
+/* General setup */
 * {
     margin: 0;
     padding: 0;
@@ -12,15 +12,7 @@ body {
     background-color: #f9f9f9;
 }
 
-header,
-.grid,
-footer {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: #fff;
-}
-
-/* Menú de navegación profesional */
+/* Navigation bar styles */
 nav {
     background-color: steelblue;
     padding: 1rem;
@@ -45,34 +37,42 @@ nav a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
-/* Contenedor principal en Grid */
-.grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    padding: 20px;
-}
-
-/* Estilos de las cajas (Main y Aside) */
-.box {
-    border: 1px solid #ddd;
-    padding: 1.5rem;
-    background-color: #fdfdfd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-}
-
+/* Main content container */
 main {
-    grid-column: 2 / 3;
+    max-width: 840px;
+    margin: 0 auto;
+    padding: 1rem;
 }
 
+/* Paragraph styles */
+p {
+    padding: 0;
+}
+
+/* Aside section styles */
 aside {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
+    width: 20rem;
+    margin: 1rem auto;
+    border: 1px solid rgb(0 0 0 / 0.2);
+    padding: 1rem;
+    background-color: #eee;
+    color: #333;
     text-align: center;
 }
 
-/* Tipografía y Encabezados */
+/* Image styling inside aside */
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+/* Profile image styling inside main */
+main img {
+    width: 150px;
+    height: auto;
+}
+
+/* Typography styles */
 h1 {
     color: steelblue;
     border-bottom: 2px solid steelblue;
@@ -87,42 +87,10 @@ h2 {
     font-size: 1.4rem;
 }
 
-p {
-    margin-bottom: 1rem;
-}
-
-/* Imágenes estilizadas sin choques de texto */
-img {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 4px;
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 6px;
-    margin-bottom: 1rem;
-}
-
-/* Imagen de perfil colocada de forma ordenada a la derecha mediante un contenedor flexible */
-.profile-container {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.profile-container img {
-    width: 150px;
-    flex-shrink: 0;
-}
-
-.profile-text {
-    flex: 1;
-}
-
-/* Listas ordenadas */
+/* List styles */
 ul.box {
     list-style-position: inside;
+    padding: 1rem;
 }
 
 ul.box li {
@@ -138,39 +106,10 @@ ul.box a:hover {
     text-decoration: underline;
 }
 
-/* Pie de página */
+/* Footer styles */
 footer {
-    margin-top: 0;
-    border-top: 1px solid #ddd;
+    margin-top: 15px;
+    border-top: 1px solid #000;
     text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    color: #666;
-}
-
-/* ==========================================
-   DISEÑO RESPONSIVO (Tablets y Celulares)
-   ================================---------- */
-@media (max-width: 768px) {
-    .grid {
-        grid-template-columns: 1fr;
-        /* Cambia a una sola columna */
-    }
-
-    main {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-        /* Manda el main debajo del aside o viceversa */
-    }
-
-    aside {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-
-    .profile-container {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
+    padding: 1rem 0;
 }
