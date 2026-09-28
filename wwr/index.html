@@ -1,125 +1,117 @@
-<!DOCTYPE html> 
- <html lang="en-US">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <meta name="description" content="I'm Alfonso, I stuidy in BYU, this page is my practice to learn HTML and CSS code. I will use this to continue my practice about web site">
-        <meta name="author" content="Alfonso Habana Rosales">
+<!DOCTYPE html>
+<html lang="en-US">
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Romanesco&display=swap" rel="stylesheet">
-        
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Road+Rage&family=Romanesco&display=swap" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+      content="Welcome to WhiteWater Rafting! Discover thrilling river adventures, family trips, and newsletter discounts for your next outdoor experience.">
+    <meta name="author" content="Alfonso Habana Rosales">
 
-        <title>Index | WhiteWater Rafting</title>
+    <title>Home | WhiteWater Rafting</title>
 
-        <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Road+Rage&family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet">
 
+    <!-- Hoja de estilos única -->
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
 
-    </head>
-    <body>
+<body>
+    <!-- Header consistente con el resto del sitio -->
+    <header class="site-header">
+        <img src="images/logo.png" alt="WhiteWater Rafting Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
 
-        <header class="box2">
-            
-            <img src="images/logo.png" alt="Logo">
-            <nav>
-                
-                
-                <a href="index.html" class="nosubraya">Home</a>
-                <a href="about.html" class="nosubraya">About Us</a>
-                <a href="trips.html" class="nosubraya">Trip</a>
-                <a href="contact.html" class="nosubraya">Contact Us</a>
-            </nav>
+    <main>
+        <!-- Sección Hero con título superpuesto -->
+        <div class="hero">
+            <img src="images/hero2.jpg" alt="Happy Friends Rafting on River">
+            <h1 class="road-rage-regular center">WhiteWater Rafting</h1>
 
-        </header>
+            <article class="hero-article vidrio">
+                <p class="center"><strong>Welcome Adventurers!</strong></p>
+                <p>Are you looking for a new adventure or just a great time outdoors? Enjoy taming
+                    fast-flowing rivers or swimming in calm lakes. Join our family and group
+                    packages today!</p>
+            </article>
+        </div>
 
-        <main>
-            <div class="hero">
-                <img src="images/hero2.jpg" alt="Happy Friends in Rafting" >
-                <h1 class="road-rage-regular,center">WhiteWater Rafting</h1>
+        <!-- Formulario de suscripción al Boletín (Newsletter) -->
+        <section class="form-section box1">
+            <h2>Subscribe to Our Newsletter</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-item">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required
+                      placeholder="John Doe">
+                </div>
 
-                <article class="vidrio">
-                    
-                   <!-- <img src="images/logo.png" alt="Happy Friends in Rafting" > -->
-                    <p class="center">Hi Adventurer,</p> 
-                    <p >Are you looking for a new adventure or just a good time? Well, here it is, enjoy taming the fast flowing rivers or swimming over the lake calm and relaxed, or just have a barbecue near one. Come and enjoy our plans to spend time with family, friends and girlfriend or boyfriend. </p>
-                    
-                </article>
+                <div class="form-item">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required
+                      placeholder="john@example.com">
+                </div>
 
+                <div class="form-item checkbox-item">
+                    <input type="checkbox" id="subscribe" name="subscribe" value="yes" checked>
+                    <label for="subscribe">I want to receive weekly news and special
+                        discounts</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Subscribe Now</button>
+            </form>
+        </section>
+
+        <!-- Llamado a la Acción (Call to Action) hacia Trips -->
+        <section class="cta-section box1 center">
+            <h2>Ready for Your Next Rapid?</h2>
+            <p>Explore all available river trips, difficulty levels, and booking details.</p>
+            <a href="trips.html" class="submit-btn cta-btn">View All Trips</a>
+        </section>
+
+        <!-- Sección Grid con ofertas y propósito del sitio -->
+        <section class="home-grid box1">
+            <h2>Why Choose WhiteWater Rafting?</h2>
+            <div class="grid-content">
+                <div class="grid-card">
+                    <img src="images/hero4.jpg" alt="Calm Lake Expedition" class="imevi">
+                    <h3>Calm Lake Expeditions</h3>
+                    <p>Perfect for families and beginners seeking a peaceful day surrounded by
+                        nature and beautiful landscapes.</p>
+                </div>
+                <div class="grid-card">
+                    <img src="images/hero1.jpg" alt="Wild River Challenge" class="imevi">
+                    <h3>Extreme Rapid Challenges</h3>
+                    <p>Designed for thrill-seekers looking to conquer powerful white water currents
+                        under expert guidance.</p>
+                </div>
             </div>
+        </section>
+    </main>
 
-            <section class="box3">
-                <h2>Survey</h2>
-                <form>
-                    <fieldset>
-                        <label for="fullname">Instroduce your name</label>
-                        <input type="text" id="fullname" name="fullname">
-                        <br>
-                        <label for="email">Instroduce your e-mail</label>
-                        <input type="email" id="email" name="email">
-                        <br>
-                    </fieldset>
-                    <input type="checkbox" id="subcribe" name="subcribe" value="subcribe">
-                    <label for="subcribe">Do you want to receive our weekly news</label>
-                    <br>
-                    <br>
-                    <input type="submit" value="SUBCRIBE">
-                </form>
+    <!-- Footer consistente -->
+    <footer class="site-footer">
+        <p>© 2026 | WhiteWater Rafting | Alfonso Habana Rosales</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com"><img src="images/fb.svg" alt="Facebook Icon"
+                  class="minimi"></a>
+            <a href="https://twitter.com"><img src="images/twi.svg" alt="Twitter Icon"
+                  class="minimi"></a>
+            <a href="https://instagram.com"><img src="images/insta.svg" alt="Instagram Icon"
+                  class="minimi"></a>
+        </nav>
+    </footer>
+</body>
 
-            </section>
-
-            <!--Carrusel de imagenes-->
-
-            <div class="slider-box">
-                <ul>
-                    <li>
-                        <a href="contact.html"><img src="images/hero2.jpg" alt="Aventure Offer">
-                        <div class="txt vidrio">
-                            <h2>Contact Us and Enjoy Our Offers</h2>
-                            <p>Santa Claus is at home and is giving away trips with up to 50% off. Don't miss out and enjoy this great Christmas experience.</p>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a href="trips.html"><img src="images/hero4.jpg" alt="Aventure Call">
-                        <div class="txt vidrio">
-                            <h2>Lake La Paz</h2>
-                            <p>Find a place to spend time with your loved ones where you can enjoy peace and tranquility, how about this place, it's a place to spend time with parents and children or to have a beautiful date with the person you love.</p>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a href="trips.html"><img src="images/hero3.jpg" alt="Aventure Call">
-                        <div class="txt vidrio">
-                            <h2>The fall of the hero</h2>
-                            <p>If you think you are a lucky hero, try to overcome this route where even heroes fall. Do you think you are able to overcome a challenge where even the heroes are humiliated?</p>
-                        </div></a>
-                    </li>
-                    <li>
-                        <a href="trips.html"><img src="images/hero1.jpg" alt="Aventure Call">
-                        <div class="txt vidrio">
-                            <h2>Waterfall of doom</h2>
-                            <p>Challenge your strength and fearlessness to face this wild river, can you face it without running away? </p>
-                        </div></a>
-                    </li>
-                </ul>
-            </div>
-
-        </main>
-
-        <footer>
-            <p>©️2024</p>
-            <p>WhiteWater Rafting</p>
-            <p>Mexico, Mexico</p>
-            <a href="https://app.moqups.com/l40Fd2SESiNXMerV43RS53RhS8FBl82q/view/page/a8b49fd9f">My Wireframe</a>
-            <nav>
-                <a href="https://facebook.com"><img src="images/fb.svg" alt="Facebook" class="minimi"></a>
-                <a href="https://twitter.com"><img src="images/twi.svg" alt="Twitter" class="minimi" ></a>
-                <a href="https://instagram.com"><img src="images/insta.svg" alt="Instagram" class="minimi"></a>
-                
-            </nav>
-
-        </footer>
-    </body>
 </html>
